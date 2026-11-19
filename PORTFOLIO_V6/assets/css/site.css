@@ -31,7 +31,6 @@
 	--clip-personal: #27b8a4;
 	--clip-about: #f0a63a;
 	--clip-contact: #5ec26a;
-	--clip-ai: #8b7cf6;
 
 	/* Type */
 	--font-display: "Archivo", "Bahnschrift", "Roboto Condensed", "Arial Narrow", system-ui, sans-serif;
@@ -409,11 +408,22 @@ h1, h2 {
 .grid--wide .tile figcaption { font-size: 1.05rem; }
 .grid--three  { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
-/* AI section: two vertical edits, kept at reel size */
-.grid--ai { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 34rem; }
-@media (min-width: 640px) { .grid--ai { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: none; } }
-@media (min-width: 900px) { .grid--ai { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
-@media (min-width: 1180px) { .grid--ai { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+/* A thin labelled divider inside a track, e.g. the AI-assisted reels */
+.subtrack {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	margin: clamp(1.75rem, 3vw, 2.25rem) 0 1.1rem;
+	font-family: var(--font-mono);
+	font-size: 0.75rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--muted);
+}
+.subtrack::before,
+.subtrack::after { content: ""; height: 1px; background: var(--line); }
+.subtrack::before { width: 1.5rem; }
+.subtrack::after { flex: 1; }
 
 /* The tools an edit was made with, under its title */
 .tile figcaption .made-with {
@@ -929,7 +939,6 @@ h1, h2 {
 .clip--personal { --c: var(--clip-personal); }
 .clip--about    { --c: var(--clip-about); }
 .clip--contact  { --c: var(--clip-contact); }
-.clip--ai       { --c: var(--clip-ai); }
 
 .clip:hover { background: color-mix(in srgb, var(--c) 38%, var(--panel)); }
 
