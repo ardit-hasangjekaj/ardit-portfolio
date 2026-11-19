@@ -31,6 +31,7 @@
 	--clip-personal: #27b8a4;
 	--clip-about: #f0a63a;
 	--clip-contact: #5ec26a;
+	--clip-ai: #8b7cf6;
 
 	/* Type */
 	--font-display: "Archivo", "Bahnschrift", "Roboto Condensed", "Arial Narrow", system-ui, sans-serif;
@@ -407,6 +408,24 @@ h1, h2 {
 .grid--wide   { grid-template-columns: minmax(0, 1fr); }
 .grid--wide .tile figcaption { font-size: 1.05rem; }
 .grid--three  { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+/* AI section: two vertical edits, kept at reel size */
+.grid--ai { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 34rem; }
+@media (min-width: 640px) { .grid--ai { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: none; } }
+@media (min-width: 900px) { .grid--ai { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (min-width: 1180px) { .grid--ai { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+
+/* The tools an edit was made with, under its title */
+.tile figcaption .made-with {
+	display: block;
+	margin-top: 0.3rem;
+	font-family: var(--font-mono);
+	font-size: 0.6875rem;
+	font-weight: 500;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--dim);
+}
 .grid--social { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
 @media (min-width: 560px) {
@@ -910,6 +929,7 @@ h1, h2 {
 .clip--personal { --c: var(--clip-personal); }
 .clip--about    { --c: var(--clip-about); }
 .clip--contact  { --c: var(--clip-contact); }
+.clip--ai       { --c: var(--clip-ai); }
 
 .clip:hover { background: color-mix(in srgb, var(--c) 38%, var(--panel)); }
 
