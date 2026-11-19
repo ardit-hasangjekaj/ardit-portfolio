@@ -1,0 +1,524 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+	<title>Ardit Hasangjekaj · Video Editor</title>
+	<meta name="description" content="Video editing portfolio of Ardit Hasangjekaj: client work, reels, long-form and personal projects." />
+	<meta name="theme-color" content="#0c0d10" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Ardit Hasangjekaj · Video Editor" />
+	<meta property="og:description" content="This is a showcase of my very best edits, created through years of intensive work, experimentation, and growth." />
+	<meta name="twitter:card" content="summary" />
+	<link rel="icon" type="image/png" href="images/web/favicon.png" />
+	<link rel="apple-touch-icon" href="images/web/apple-touch-icon.png" />
+	<link rel="preload" as="image" href="images/web/bg.jpg" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" />
+	<link rel="stylesheet" href="assets/css/site.css" />
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Ardit Hasangjekaj",
+		"jobTitle": "Video Editor",
+		"sameAs": ["https://www.tiktok.com/@arditkk"]
+	}
+	</script>
+</head>
+<body>
+
+	<a class="skip-link" href="#client">Skip to the work</a>
+
+	<!-- ============ Top bar ============ -->
+	<header class="topbar">
+		<a class="brand" href="#top" aria-label="Ardit Hasangjekaj, back to top">
+			<img src="images/web/logo.png" width="30" height="30" alt="" />
+			<span>Ardit Hasangjekaj</span>
+		</a>
+		<nav class="topnav" aria-label="Main">
+			<a href="#client">Client work</a>
+			<a href="#personal">Personal</a>
+			<a href="#about">About</a>
+			<a class="btn btn--small" href="#contact">Get in touch</a>
+		</nav>
+	</header>
+
+	<main>
+
+		<!-- ============ Intro ============ -->
+		<section class="hero" id="top" data-section="Intro">
+			<div class="hero__bg" aria-hidden="true"></div>
+			<div class="wrap hero__inner">
+
+				<div class="hero__text">
+					<p class="eyebrow">Video editor</p>
+					<h1><span class="line"><span>Ardit</span></span> <span class="line"><span>Hasangjekaj</span></span></h1>
+					<p class="hero__lede">This is a showcase of my very best edits, created through years of intensive work, experimentation, and growth.</p>
+					<div class="actions">
+						<a class="btn btn--primary" href="#client">Watch the work</a>
+						<a class="btn" href="#contact">Get in touch</a>
+					</div>
+					<nav class="formats" aria-label="Jump to a format">
+						<a href="#long-form"><i class="frame frame--wide" aria-hidden="true"></i>16:9</a>
+						<a href="#reels"><i class="frame frame--tall" aria-hidden="true"></i>9:16</a>
+						<a href="#social"><i class="frame frame--square" aria-hidden="true"></i>1:1</a>
+					</nav>
+				</div>
+
+				<!-- Preview monitor: cuts through the client reels. site.js fills in the other clips;
+				     without JavaScript it stays on this first frame and still links to the video. -->
+				<aside class="monitor" id="monitor" aria-label="Preview of client reels">
+					<div class="monitor__head" aria-hidden="true">
+						<span class="monitor__label">Reels preview</span>
+						<span class="monitor__tc" id="monitor-tc">00:00:00:00</span>
+					</div>
+					<a class="monitor__screen js-play" id="monitor-screen" href="https://drive.google.com/file/d/1x9Q5G9gSnoyyxduUVMAOjAWtTFSPFJJO/view" target="_blank" rel="noopener noreferrer"
+						data-embed="https://drive.google.com/file/d/1x9Q5G9gSnoyyxduUVMAOjAWtTFSPFJJO/preview" data-ratio="tall" data-title="Alex's Appletini" aria-label="Play Alex's Appletini">
+						<img class="monitor__frame is-on" src="images/web/appletini.jpg" width="720" height="1280" alt="" fetchpriority="high" />
+						<span class="monitor__segs" id="monitor-segs" aria-hidden="true"></span>
+						<span class="monitor__caption" aria-hidden="true">
+							<b data-monitor-title>Alex's Appletini</b>
+							<span>Play this reel</span>
+						</span>
+					</a>
+					<p class="monitor__side" aria-hidden="true">
+						<b data-monitor-title>Alex's Appletini</b>
+						<span>Tap the preview to play this reel</span>
+					</p>
+					<div class="monitor__foot" id="monitor-foot" hidden>
+						<button class="monitor__btn" type="button" id="monitor-toggle" aria-pressed="false">Pause</button>
+						<button class="monitor__btn" type="button" id="monitor-next">Next clip</button>
+						<span class="monitor__count" id="monitor-count" aria-live="off">1 / 5</span>
+					</div>
+				</aside>
+
+			</div>
+		</section>
+
+		<!-- ============ Client work ============ -->
+		<section class="section" id="client" data-section="Client work">
+			<div class="wrap">
+				<header class="section__head">
+					<h2>Client work</h2>
+				</header>
+
+				<!-- Long-form -->
+				<div class="track" id="long-form">
+					<header class="track__head">
+						<h3><span class="ratio">16:9</span></h3>
+					</header>
+					<div class="grid grid--wide">
+
+						<figure class="tile">
+							<a class="card card--wide js-play" href="https://drive.google.com/file/d/1CZJG-kP3v1RgvTjN1I1bvB4_aN8dmLdP/view" target="_blank" rel="noopener noreferrer"
+								data-embed="https://drive.google.com/file/d/1CZJG-kP3v1RgvTjN1I1bvB4_aN8dmLdP/preview" data-ratio="wide" data-title="Nimule: Revenge Killings" data-id="nimule">
+								<img src="images/web/nimule.jpg" width="1600" height="810" alt="Nimule: Revenge Killings title card" />
+								<span class="card__play" aria-hidden="true"></span>
+							</a>
+							<figcaption>Nimule: Revenge Killings</figcaption>
+						</figure>
+
+						<!-- Thumbnail comes straight from Google Drive for now. To use your own, save it in images/web and change src. -->
+						<figure class="tile">
+							<a class="card card--wide js-play" href="https://drive.google.com/file/d/1LwyQxgdL_pMOY1v7xq-ibpE8xUI9Blzc/view" target="_blank" rel="noopener noreferrer"
+								data-embed="https://drive.google.com/file/d/1LwyQxgdL_pMOY1v7xq-ibpE8xUI9Blzc/preview" data-ratio="wide" data-title="CureGRIN: Traynelis" data-id="curegrin-traynelis">
+								<img src="https://drive.google.com/thumbnail?id=1LwyQxgdL_pMOY1v7xq-ibpE8xUI9Blzc&amp;sz=w1280" width="1280" height="675" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.style.display='none'" alt="CureGRIN: Traynelis" />
+								<span class="card__play" aria-hidden="true"></span>
+							</a>
+							<figcaption>CureGRIN: Traynelis</figcaption>
+						</figure>
+
+					</div>
+				</div>
+
+				<!-- Reels & Shorts -->
+				<div class="track" id="reels">
+					<header class="track__head">
+						<span class="ratio">9:16</span>
+						<h3>Reels &amp; Shorts</h3>
+					</header>
+					<div class="grid grid--reels">
+
+						<figure class="tile">
+							<a class="card card--tall js-play" href="https://drive.google.com/file/d/1x9Q5G9gSnoyyxduUVMAOjAWtTFSPFJJO/view" target="_blank" rel="noopener noreferrer"
+								data-embed="https://drive.google.com/file/d/1x9Q5G9gSnoyyxduUVMAOjAWtTFSPFJJO/preview" data-ratio="tall" data-title="Alex's Appletini" data-id="appletini">
+								<img src="images/web/appletini.jpg" width="720" height="1280" loading="lazy" decoding="async" alt="Alex's Appletini cocktail reel" />
+								<span class="card__play" aria-hidden="true"></span>
+							</a>
+							<figcaption>Alex's Appletini</figcaption>
+						</figure>
+
+						<figure class="tile">
+							<a class="card card--tall js-play" href="https://drive.google.com/file/d/16-9Wy7DSBpqb_nfVD7QwGzq1wTVQD8W2/view" target="_blank" rel="noopener noreferrer"
+								data-embed="https://drive.google.com/file/d/16-9Wy7DSBpqb_nfVD7QwGzq1wTVQD8W2/preview" data-ratio="tall" data-title="Day 1 Million" data-id="day-1-million">
+								<img src="images/web/reel-2.jpg" width="720" height="1280" loading="lazy" decoding="async" alt="Day 1 Million: driving a Lamborghini around the world" />
+								<span class="card__play" aria-hidden="true"></span>
+							</a>
+							<figcaption>Day 1 Million</figcaption>
+						</figure>
+
+						<figure class="tile">
+							<a class="card card--tall js-play" href="https://drive.google.com/file/d/1DV_6esKFVrE6magXj5cNVEFl40nkwZ7V/view" target="_blank" rel="noopener noreferrer"
+								data-embed="https://drive.google.com/file/d/1DV_6esKFVrE6magXj5cNVEFl40nkwZ7V/preview" data-ratio="tall" data-title="How I went from 5mm deep pockets" data-id="deep-pockets">
+								<img src="images/web/reel-3.jpg" width="720" height="1280" loading="lazy" decoding="async" alt="How I went from 5mm deep pockets" />
+								<span class="card__play" aria-hidden="true"></span>
+							</a>
+							<figcaption>How I went from 5mm deep pockets</figcaption>
+						</figure>
+
+						<figure class="tile">
+							<a class="card card--tall js-play" href="https://drive.google.com/file/d/1Kw8-wOvN2A0C1ZCt5fcccwLIqBxswFpu/view" target="_blank" rel="noopener noreferrer"
+								data-embed="https://drive.google.com/file/d/1Kw8-wOvN2A0C1ZCt5fcccwLIqBxswFpu/preview" data-ratio="tall" data-title="Golf holder" data-id="golf-holder">
+								<img src="images/web/sc5.jpg" width="720" height="1280" loading="lazy" decoding="async" alt="Golf holder product video" />
+								<span class="card__play" aria-hidden="true"></span>
+							</a>
+							<figcaption>Golf holder</figcaption>
+						</figure>
+
+						<figure class="tile">
+							<a class="card card--tall js-play" href="https://drive.google.com/file/d/156qG8ShyfGnWsIjeEw74x_hPWU10osv6/view" target="_blank" rel="noopener noreferrer"
+								data-embed="https://drive.google.com/file/d/156qG8ShyfGnWsIjeEw74x_hPWU10osv6/preview" data-ratio="tall" data-title="5 Watches That Shouldn't Look This Expensive" data-id="watches">
+								<img src="images/web/reel-4.jpg" width="720" height="1280" loading="lazy" decoding="async" alt="5 Watches That Shouldn't Look This Expensive" />
+								<span class="card__play" aria-hidden="true"></span>
+							</a>
+							<figcaption>5 Watches That Shouldn't Look This Expensive</figcaption>
+						</figure>
+
+						<!-- Added Nov 2026. Thumbnails come straight from Google Drive for now.
+						     To use your own, save a 720x1280 image in images/web and change src. -->
+						<figure class="tile">
+							<a class="card card--tall js-play" href="https://drive.google.com/file/d/1LeEmHd55GaIC--lI8bRwJiO-gkJj-DF2/view" target="_blank" rel="noopener noreferrer"
+								data-embed="https://drive.google.com/file/d/1LeEmHd55GaIC--lI8bRwJiO-gkJj-DF2/preview" data-ratio="tall" data-title="J.D. LaRock Boston reel" data-id="jd-larock-boston">
+								<img src="https://drive.google.com/thumbnail?id=1LeEmHd55GaIC--lI8bRwJiO-gkJj-DF2&amp;sz=w720" width="720" height="1280" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.style.display='none'" alt="J.D. LaRock Boston reel" />
+								<span class="card__play" aria-hidden="true"></span>
+							</a>
+							<figcaption>J.D. LaRock Boston reel</figcaption>
+						</figure>
+
+						<figure class="tile">
+							<a class="card card--tall js-play" href="https://drive.google.com/file/d/1nDuG6ZNnIbx_w23V8HeuFFZDqf4GvHrK/view" target="_blank" rel="noopener noreferrer"
+								data-embed="https://drive.google.com/file/d/1nDuG6ZNnIbx_w23V8HeuFFZDqf4GvHrK/preview" data-ratio="tall" data-title="J.D. LaRock Boston reel 2" data-id="jd-larock-boston-2">
+								<img src="https://drive.google.com/thumbnail?id=1nDuG6ZNnIbx_w23V8HeuFFZDqf4GvHrK&amp;sz=w720" width="720" height="1280" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.style.display='none'" alt="J.D. LaRock Boston reel 2" />
+								<span class="card__play" aria-hidden="true"></span>
+							</a>
+							<figcaption>J.D. LaRock Boston reel 2</figcaption>
+						</figure>
+
+						<figure class="tile">
+							<a class="card card--tall js-play" href="https://drive.google.com/file/d/19BJ02ZNVZ-2M23Ay1hxl3pmbsZk8d90y/view" target="_blank" rel="noopener noreferrer"
+								data-embed="https://drive.google.com/file/d/19BJ02ZNVZ-2M23Ay1hxl3pmbsZk8d90y/preview" data-ratio="tall" data-title="Returned Order" data-id="returned-order">
+								<img src="https://drive.google.com/thumbnail?id=19BJ02ZNVZ-2M23Ay1hxl3pmbsZk8d90y&amp;sz=w720" width="720" height="1280" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.style.display='none'" alt="Returned Order" />
+								<span class="card__play" aria-hidden="true"></span>
+							</a>
+							<figcaption>Returned Order</figcaption>
+						</figure>
+
+						<!-- Facebook players: site.js loads each one as it scrolls into view.
+						     To add another, copy a block and change the two reel links. -->
+						<figure class="tile">
+							<div class="embed embed--tall" data-title="Client reel on Facebook (1 of 4)"
+								data-src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1546274909728498%2F&amp;show_text=false&amp;width=267&amp;t=0">
+								<a class="embed__fallback" href="https://www.facebook.com/reel/1546274909728498/" target="_blank" rel="noopener noreferrer"><span>Watch on Facebook</span></a>
+							</div>
+							<figcaption>Facebook reel</figcaption>
+						</figure>
+
+						<figure class="tile">
+							<div class="embed embed--tall" data-title="Client reel on Facebook (2 of 4)"
+								data-src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Freel%2F820032090764255%2F&amp;show_text=false&amp;width=267&amp;t=0">
+								<a class="embed__fallback" href="https://www.facebook.com/reel/820032090764255/" target="_blank" rel="noopener noreferrer"><span>Watch on Facebook</span></a>
+							</div>
+							<figcaption>Facebook reel</figcaption>
+						</figure>
+
+						<figure class="tile">
+							<div class="embed embed--tall" data-title="Client reel on Facebook (3 of 4)"
+								data-src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1235211921999911%2F&amp;show_text=false&amp;width=267&amp;t=0">
+								<a class="embed__fallback" href="https://www.facebook.com/reel/1235211921999911/" target="_blank" rel="noopener noreferrer"><span>Watch on Facebook</span></a>
+							</div>
+							<figcaption>Facebook reel</figcaption>
+						</figure>
+
+						<figure class="tile">
+							<div class="embed embed--tall" data-title="Client reel on Facebook (4 of 4)"
+								data-src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Freel%2F4271575979729235%2F&amp;show_text=false&amp;width=267&amp;t=0">
+								<a class="embed__fallback" href="https://www.facebook.com/reel/4271575979729235/" target="_blank" rel="noopener noreferrer"><span>Watch on Facebook</span></a>
+							</div>
+							<figcaption>Facebook reel</figcaption>
+						</figure>
+
+						<div class="tile tile--cta">
+							<a class="cta-tile" href="#contact">
+								<span class="cta-tile__kicker">Your reel here</span>
+								<span class="cta-tile__title">Got footage that needs cutting?</span>
+								<span class="cta-tile__link">Get in touch</span>
+							</a>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Facebook feed -->
+				<div class="track" id="social">
+					<header class="track__head">
+						<span class="ratio">1:1</span>
+						<h3>Facebook feed</h3>
+					</header>
+					<div class="grid grid--social">
+
+						<figure class="tile">
+							<div class="embed embed--square" data-title="Client video on Facebook (1 of 6)"
+								data-src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Fstorageauctionpirate%2Fvideos%2F1735136896963158%2F&amp;show_text=false&amp;width=476&amp;t=0">
+								<a class="embed__fallback" href="https://www.facebook.com/storageauctionpirate/videos/1735136896963158/" target="_blank" rel="noopener noreferrer"><span>Watch on Facebook</span></a>
+							</div>
+							<figcaption>Posted on <b>@storageauctionpirate</b></figcaption>
+						</figure>
+
+						<figure class="tile">
+							<div class="embed embed--square" data-title="Client video on Facebook (2 of 6)"
+								data-src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Fronprattofficial%2Fvideos%2F871254591212474%2F&amp;show_text=false&amp;width=476&amp;t=0">
+								<a class="embed__fallback" href="https://www.facebook.com/ronprattofficial/videos/871254591212474/" target="_blank" rel="noopener noreferrer"><span>Watch on Facebook</span></a>
+							</div>
+							<figcaption>Posted on <b>@ronprattofficial</b></figcaption>
+						</figure>
+
+						<figure class="tile">
+							<div class="embed embed--square" data-title="Client video on Facebook (3 of 6)"
+								data-src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2FsmokinjoespitbbqTX%2Fvideos%2F2432563576897573%2F&amp;show_text=false&amp;width=476&amp;t=0">
+								<a class="embed__fallback" href="https://www.facebook.com/smokinjoespitbbqTX/videos/2432563576897573/" target="_blank" rel="noopener noreferrer"><span>Watch on Facebook</span></a>
+							</div>
+							<figcaption>Posted on <b>@smokinjoespitbbqTX</b></figcaption>
+						</figure>
+
+						<figure class="tile">
+							<div class="embed embed--square" data-title="Client video on Facebook (4 of 6)"
+								data-src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2FJazzaOfficial%2Fvideos%2F1198679954062677%2F&amp;show_text=false&amp;width=476&amp;t=0">
+								<a class="embed__fallback" href="https://www.facebook.com/JazzaOfficial/videos/1198679954062677/" target="_blank" rel="noopener noreferrer"><span>Watch on Facebook</span></a>
+							</div>
+							<figcaption>Posted on <b>@JazzaOfficial</b></figcaption>
+						</figure>
+
+						<figure class="tile">
+							<div class="embed embed--square" data-title="Client video on Facebook (5 of 6)"
+								data-src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2FStrictlyBBallOfficial%2Fvideos%2F999544895250712%2F&amp;show_text=false&amp;width=476&amp;t=0">
+								<a class="embed__fallback" href="https://www.facebook.com/StrictlyBBallOfficial/videos/999544895250712/" target="_blank" rel="noopener noreferrer"><span>Watch on Facebook</span></a>
+							</div>
+							<figcaption>Posted on <b>@StrictlyBBallOfficial</b></figcaption>
+						</figure>
+
+						<figure class="tile">
+							<div class="embed embed--square" data-title="Client video on Facebook (6 of 6)"
+								data-src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1146067713808527%2F&amp;show_text=false&amp;width=476&amp;t=0">
+								<a class="embed__fallback" href="https://www.facebook.com/reel/1146067713808527/" target="_blank" rel="noopener noreferrer"><span>Watch on Facebook</span></a>
+							</div>
+							<figcaption>Facebook reel</figcaption>
+						</figure>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ Personal ============ -->
+		<section class="section" id="personal" data-section="Personal">
+			<div class="wrap">
+				<header class="section__head">
+					<h2>Personal</h2>
+				</header>
+
+				<div class="split">
+					<div class="track">
+						<header class="track__head">
+							<span class="ratio">9:16</span>
+							<h3>Short-form</h3>
+						</header>
+						<div class="grid grid--three">
+
+							<figure class="tile">
+								<a class="card card--tall js-play" href="https://www.tiktok.com/@arditkk/video/7577095804955954488" target="_blank" rel="noopener noreferrer"
+									data-embed="https://www.tiktok.com/player/v1/7577095804955954488?autoplay=1&amp;rel=0" data-ratio="tall" data-title="Webster?!" data-source="TikTok" data-id="webster">
+									<img src="images/web/webster.jpg" width="800" height="1067" loading="lazy" decoding="async" alt="Webster?! freerunning short" />
+									<span class="card__play" aria-hidden="true"></span>
+								</a>
+								<figcaption>Webster?! <span>TikTok</span></figcaption>
+							</figure>
+
+							<figure class="tile">
+								<a class="card card--tall card--top js-play" href="https://www.youtube.com/watch?v=BcwX2U4nm-U" target="_blank" rel="noopener noreferrer"
+									data-embed="https://www.youtube-nocookie.com/embed/BcwX2U4nm-U?autoplay=1&amp;rel=0&amp;playsinline=1" data-ratio="tall" data-title="Stories That Travel" data-source="YouTube" data-id="stories-that-travel">
+									<img src="images/web/world.jpg" width="700" height="1173" loading="lazy" decoding="async" alt="Stories That Travel short" />
+									<span class="card__play" aria-hidden="true"></span>
+								</a>
+								<figcaption>Stories That Travel <span>YouTube</span></figcaption>
+							</figure>
+
+							<figure class="tile">
+								<a class="card card--tall js-play" href="https://www.tiktok.com/@arditkk/video/7628618335168695573" target="_blank" rel="noopener noreferrer"
+									data-embed="https://www.tiktok.com/player/v1/7628618335168695573?autoplay=1&amp;rel=0" data-ratio="tall" data-title="Backflip?!" data-source="TikTok" data-id="backflip">
+									<img src="images/web/backflip.jpg" width="800" height="1067" loading="lazy" decoding="async" alt="Backflip?! freerunning short" />
+									<span class="card__play" aria-hidden="true"></span>
+								</a>
+								<figcaption>Backflip?! <span>TikTok</span></figcaption>
+							</figure>
+
+						</div>
+					</div>
+
+					<div class="track">
+						<header class="track__head">
+							<h3><span class="ratio">16:9</span></h3>
+						</header>
+						<a class="card card--wide js-play" href="https://www.youtube.com/watch?v=i-TpsbHTDTY" target="_blank" rel="noopener noreferrer"
+							data-embed="https://www.youtube-nocookie.com/embed/i-TpsbHTDTY?autoplay=1&amp;rel=0&amp;playsinline=1" data-ratio="wide" data-title="Threaten Every Single Square On The Board" data-source="YouTube" data-id="chess">
+							<img src="images/web/chess.jpg" width="1280" height="720" loading="lazy" decoding="async" alt="Threaten Every Single Square On The Board: chess video" />
+							<span class="card__play" aria-hidden="true"></span>
+						</a>
+						<div class="caption">
+							<h4>Threaten Every Single Square On The Board</h4>
+							<p>Chess video on YouTube</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ About ============ -->
+		<section class="section" id="about" data-section="About">
+			<div class="wrap">
+				<header class="section__head">
+					<h2>About</h2>
+					<p class="section__meta">Freerunner turned editor</p>
+				</header>
+
+				<figure class="about__photo">
+					<img src="images/web/about.jpg" width="1080" height="497" loading="lazy" decoding="async" alt="Ardit mid-jump while freerunning, silhouetted against a sunset sky" />
+				</figure>
+
+				<div class="about__text">
+					<div class="about__lead">
+						<p class="lead">Starting out as a freerunner, I fell in love with recording and editing my own videos.</p>
+					</div>
+					<div class="prose">
+						<p>I used my training clips as a playground to learn video editing: experimenting, failing, and improving with every project. What began as a passion quickly turned into a skill, and eventually into a profession.</p>
+						<p>Those early self-made videos became the foundation that led me to pursue a career in visual storytelling.</p>
+						<a class="btn btn--primary" href="#contact">Work with me</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ Contact ============ -->
+		<section class="section section--contact" id="contact" data-section="Contact">
+			<div class="wrap contact">
+				<div class="contact__intro">
+					<h2>Contact</h2>
+					<p class="lead">Have a project in mind? Send me a message and I'll get back to you.</p>
+
+					<ul class="links">
+						<li><a href="https://www.tiktok.com/@arditkk" target="_blank" rel="noopener noreferrer"><span>TikTok</span><b>@arditkk</b></a></li>
+						<!-- <li><a href="https://www.instagram.com/ardit_hasangjekaj/" target="_blank" rel="noopener noreferrer"><span>Instagram</span><b>@ardit_hasangjekaj</b></a></li> -->
+					</ul>
+				</div>
+
+				<div class="form-shell">
+					<form class="form" id="contact-form" method="post" action="https://formspree.io/f/mpqbeebk" novalidate>
+						<fieldset class="choice">
+							<legend>What do you need edited? <span>Optional</span></legend>
+							<div class="choice__options">
+								<label><input type="radio" name="project" value="16:9 video" /><span>16:9 video</span></label>
+								<label><input type="radio" name="project" value="Reels and Shorts (9:16)" /><span>Reels &amp; Shorts</span></label>
+								<label><input type="radio" name="project" value="Facebook feed (1:1)" /><span>Facebook feed</span></label>
+								<label><input type="radio" name="project" value="Not sure yet" /><span>Not sure yet</span></label>
+							</div>
+						</fieldset>
+						<div class="form__row">
+							<div class="field">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" autocomplete="name" placeholder="Your name" required aria-describedby="name-error" />
+								<p class="field__error" id="name-error" hidden></p>
+							</div>
+							<div class="field">
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="email-error" />
+								<p class="field__error" id="email-error" hidden></p>
+							</div>
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6" placeholder="Tell me about your project" required aria-describedby="message-error"></textarea>
+							<p class="field__error" id="message-error" hidden></p>
+						</div>
+						<!-- Spam trap: real visitors never see or fill this -->
+						<input class="form__trap" type="text" name="_gotcha" id="gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
+						<div class="form__foot">
+							<button class="btn btn--primary" type="submit">Send message</button>
+							<p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+						</div>
+					</form>
+
+					<!-- Shown in place of the form once a message has been sent -->
+					<div class="sent" id="form-sent" hidden tabindex="-1">
+						<span class="sent__mark" aria-hidden="true"></span>
+						<h3>Message sent</h3>
+						<p>Thanks for reaching out. I'll reply to the email address you gave.</p>
+						<button class="btn" type="button" id="form-again">Send another message</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="wrap footer__inner">
+			<p>&copy; <span id="year">2026</span> Ardit Hasangjekaj</p>
+			<nav class="footer__nav" aria-label="Footer">
+				<a href="#client">Client work</a>
+				<a href="#personal">Personal</a>
+				<a href="#about">About</a>
+				<a href="#contact">Contact</a>
+				<a href="#top">Back to top</a>
+			</nav>
+		</div>
+	</footer>
+
+	<!-- ============ Page timeline (section nav + scroll position) ============ -->
+	<nav class="timeline" aria-label="Page timeline">
+		<div class="timeline__readout" aria-hidden="true">
+			<span class="timeline__label" id="tl-label">Intro</span>
+			<span class="timeline__pct" id="tl-pct">0%</span>
+		</div>
+		<div class="timeline__track" id="tl-track">
+			<div class="timeline__ruler" id="tl-ruler" aria-hidden="true"></div>
+			<div class="timeline__clips">
+				<a class="clip clip--intro" href="#top" data-target="top">Intro</a>
+				<a class="clip clip--client" href="#client" data-target="client"><span>Client<span class="clip__more"> work</span></span></a>
+				<a class="clip clip--personal" href="#personal" data-target="personal">Personal</a>
+				<a class="clip clip--about" href="#about" data-target="about">About</a>
+				<a class="clip clip--contact" href="#contact" data-target="contact">Contact</a>
+			</div>
+			<span class="playhead" id="tl-playhead" aria-hidden="true"></span>
+		</div>
+	</nav>
+
+	<!-- ============ Video player ============ -->
+	<dialog class="player" id="player" aria-labelledby="player-title">
+		<div class="player__bar">
+			<p class="player__title" id="player-title"></p>
+			<a class="player__ext" id="player-ext" href="#" target="_blank" rel="noopener noreferrer">Open<span class="player__ext-more"> on <span id="player-source">Google Drive</span></span></a>
+			<button class="player__copy" type="button" id="player-copy" hidden>Copy link</button>
+			<button class="player__close" type="button" id="player-close">Close</button>
+		</div>
+		<div class="player__frame" id="player-frame"></div>
+		<div class="player__nav">
+			<button class="player__step" type="button" id="player-prev">Previous</button>
+			<span class="player__count"><span id="player-count" aria-live="polite"></span><span class="player__keys" aria-hidden="true">use the arrow keys</span></span>
+			<button class="player__step player__step--next" type="button" id="player-next">Next</button>
+		</div>
+	</dialog>
+
+	<script src="assets/js/site.js" defer></script>
+</body>
+</html>
