@@ -1,0 +1,4 @@
+# The site lives in the PORTFOLIO_V6 folder, so publish that folder as the site root.
+[build]
+  publish = "PORTFOLIO_V6"
+  command = ""
